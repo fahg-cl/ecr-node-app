@@ -27,3 +27,8 @@ jobs:
           docker build -t app-inmobiliaria .
           docker tag app-inmobiliaria ${{ steps.login-ecr.outputs.registry }}/app-inmobiliaria:latest
           docker push ${{ steps.login-ecr.outputs.registry }}/app-inmobiliaria:latest
+
+      - name: Verificar variables AWS
+        run: |
+            echo "Key: ${{ secrets.AWS_ACCESS_KEY_ID != '' }}"
+            echo "Secret: ${{ secrets.AWS_SECRET_ACCESS_KEY != '' }}"
