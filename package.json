@@ -1,0 +1,16 @@
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:sa-east-1:508526123997:repository/app-inmobiliaria",
+        "registryId": "508526123997",
+        "repositoryName": "app-inmobiliaria",
+        "repositoryUri": "508526123997.dkr.ecr.sa-east-1.amazonaws.com/app-inmobiliaria",
+        "createdAt": "2025-07-04T23:32:07.082000-04:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        },
+        "encryptionConfiguration": {
+            "encryptionType": "AES256"
+        }
+    }
+}
