@@ -8,11 +8,6 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
     steps:
-      - name: Verificar variables AWS
-        run: |
-            echo "Key: ${{ secrets.AWS_ACCESS_KEY_ID != '' }}"
-            echo "Secret: ${{ secrets.AWS_SECRET_ACCESS_KEY != '' }}"
-  
       - name: Checkout code
         uses: actions/checkout@v3
 
